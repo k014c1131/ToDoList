@@ -20,6 +20,10 @@
           print('接続に成功しました。<br>');
 
           $dbh->query('SET NAMES utf8');
+	
+	if(isset($_GET['add'])){
+	}else if(isset($_GET['delete'])){
+	}
 
           $sql = 'insert into shouhin (id, name) values (?, ?)';
           $stmt = $dbh->prepare($sql);
